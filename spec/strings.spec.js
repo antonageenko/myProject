@@ -32,8 +32,8 @@ describe(`String functions.`, () => {
             expect(countWords('my butiful string')).toBe(3)
         });
 
-        it(`should trim string`, () => {
-            expect(countWords('    my butiful string  ')).toBe(3)
+        it(`should ignore starting and trailing spaces`, () => {
+            expect(countWords('    my butiful string  ')).toBe(3, 'HINT: try trim')
         });
 
         it(`should return 0 when there are no words in the string`, () => {
@@ -48,7 +48,7 @@ describe(`String functions.`, () => {
     describe(`#zeroReplacer`, () => {
         const zeroReplacer = stringFunctions.zeroReplacer;
 
-        it(`should replace ALL zeroes with spaces`, () => {
+        it(`should replace ALL zeros with spaces`, () => {
             expect(zeroReplacer('My0space0bar0is0broken!')).toBe('My space bar is broken!');
         });
 
