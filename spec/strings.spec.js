@@ -1,6 +1,6 @@
 const stringFunctions = require('../string.functions');
 
-describe(`String functions.`, () => {
+describe(`String function`, () => {
     describe(`#capitalize`, () => {
         const capitalize = stringFunctions.capitalize;
 
@@ -29,7 +29,11 @@ describe(`String functions.`, () => {
         const countWords = stringFunctions.countWords;
 
         it(`should count words in string`, () => {
-            expect(countWords('my butiful string')).toBe(3)
+            expect(countWords('my beautiful string')).toBe(3)
+        });
+
+        it(`should count words correctly in string when words separated with multiple space`, () => {
+            expect(countWords('my    beautiful    string')).toBe(3)
         });
 
         it(`should ignore starting and trailing spaces`, () => {
