@@ -37,7 +37,7 @@ describe(`String function`, () => {
         });
 
         it(`should ignore starting and trailing spaces`, () => {
-            expect(countWords('    my butiful string  ')).toBe(3, 'HINT: try trim')
+            expect(countWords('    my beautiful string  ')).toBe(3, 'HINT: try trim')
         });
 
         it(`should return 0 when there are no words in the string`, () => {
