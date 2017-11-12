@@ -121,8 +121,7 @@ fdescribe(`Number function`, () => {
 
                 spyOn(console, 'log');
 
-                expect(taxCounter(price))
-                    .toBeUndefined();
+                expect(taxCounter(price)).toBeUndefined();
                 expect(console.log)
                     .toHaveBeenCalledWith(`Price currency does not match to provided currency`)
             });
