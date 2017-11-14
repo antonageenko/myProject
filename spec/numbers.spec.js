@@ -1,6 +1,6 @@
 const numberFunctions = require('../number.functions');
 
-fdescribe(`Number function`, () => {
+describe(`Number function`, () => {
     describe(`#taxCounter`, () => {
         const taxCounter = numberFunctions.taxCounter;
 
