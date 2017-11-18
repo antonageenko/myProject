@@ -1,0 +1,22 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antonageenko/myProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antonageenko/myProject/issues"
+  },
+  "homepage": "https://github.com/antonageenko/myProject#readme",
+  "devDependencies": {
+    "jasmine": "^2.8.0"
+  }
+}
