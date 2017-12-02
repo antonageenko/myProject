@@ -2,6 +2,7 @@ node_modules/
 .idea/
 *.js
 !spec/**/*.js
+!bin/**/*.js
 .npmrc
 *.iml
 package-lock.json
